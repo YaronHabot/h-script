@@ -1,0 +1,28 @@
+dependencies:
+  commander: 2.17.0
+  lodash: 4.17.10
+devDependencies:
+  coffeescript: 2.3.1
+packages:
+  /coffeescript/2.3.1:
+    dev: true
+    engines:
+      node: '>=6'
+    hasBin: true
+    resolution:
+      integrity: sha512-DNJmSPMyiz+OjWYyuDXNBcFutDjP2TS2owsZ8YvT65hA8c5IdHWIBqdA3Yf/XHoK23d/f1HqLjQbEJJZJoeV1w==
+  /commander/2.17.0:
+    dev: false
+    resolution:
+      integrity: sha512-477o1hdVORiFlZxw8wgsXYCef3lh0zl/OV0FTftqiDxJSWw6dPQ2ipS4k20J2qBcsmsmLKSyr2iFrf9e3JGi4w==
+  /lodash/4.17.10:
+    dev: false
+    resolution:
+      integrity: sha512-UejweD1pDoXu+AD825lWwp4ZGtSwgnpZxb3JDViD7StjQz+Nb/6l093lx4OQ0foGWNRoc19mWy7BzL+UAK2iVg==
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 8
+shrinkwrapVersion: 3
+specifiers:
+  coffeescript: ^2.3.1
+  commander: ^2.17.0
+  lodash: ^4.17.10
