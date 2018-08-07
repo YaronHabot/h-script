@@ -1,7 +1,7 @@
 dependencies:
   commander: 2.17.0
   lodash: 4.17.10
-  node-dir: 0.1.17
+  recursive-readdir: 2.2.2
 devDependencies:
   coffeescript: 2.3.1
 packages:
@@ -41,14 +41,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
-  /node-dir/0.1.17:
+  /recursive-readdir/2.2.2:
     dependencies:
       minimatch: 3.0.4
     dev: false
     engines:
-      node: '>= 0.10.5'
+      node: '>=0.10.0'
     resolution:
-      integrity: sha1-X1Zl2TNRM1yqvvjxxVRRbPXx5OU=
+      integrity: sha512-nRCcW9Sj7NuZwa2XvH9co8NPeXUBhZP7CRKJtU+cS6PW9FpCIFoI5ib0NT1ZrbNuPoRy0ylyCaUL8Gih4LSyFg==
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 8
 shrinkwrapVersion: 3
@@ -56,4 +56,4 @@ specifiers:
   coffeescript: ^2.3.1
   commander: ^2.17.0
   lodash: ^4.17.10
-  node-dir: ^0.1.17
+  recursive-readdir: ^2.2.2

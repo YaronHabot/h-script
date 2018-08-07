@@ -1,10 +1,14 @@
 fs = require 'fs'
-{readFiles} = require 'node-dir'
+path = require 'path'
+recursive = require 'recursive-readdir'
+
+cullFirst = (p) ->
+    t = _.split p, '\\'
+    t = _.drop p
+    return _.join p, '\\'
 
 module.exports = (config, handler) ->
-    return new Promise (resolve) -> {
-        readFiles config.source, (err, content, next) ->
-                if !err then handler content
-                next
-            , resolve
-    }
+    recursive config.source, (err, files) ->
+        _.map files, (file) ->
+            fs.readFile file, (err, data) ->
+                fs.writeFile (path.join config.out, cullFirst file), handler(data)
