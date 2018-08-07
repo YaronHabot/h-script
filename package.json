@@ -2,11 +2,12 @@
 	"name": "h-script",
 	"version": "1.0.0",
 	"description": "",
-	"main": "src/index.js",
+	"main": "src/h-script.coffee",
 	"scripts": {
-		"test": "echo \"Skip test\" && exit 0",
+		"test": "npm run build && node ./build/h-script.js -c ./test/test.js",
 		"build": "coffee --output build --compile src",
-		"run": "node /build/h-script.js"
+		"run": "node /build/h-script.js",
+		"install": "pnpm install"
 	},
 	"author": "",
 	"license": "ISC",
