@@ -1,9 +1,21 @@
 dependencies:
   commander: 2.17.0
   lodash: 4.17.10
+  node-dir: 0.1.17
 devDependencies:
   coffeescript: 2.3.1
 packages:
+  /balanced-match/1.0.0:
+    dev: false
+    resolution:
+      integrity: sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
+  /brace-expansion/1.1.11:
+    dependencies:
+      balanced-match: 1.0.0
+      concat-map: 0.0.1
+    dev: false
+    resolution:
+      integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==
   /coffeescript/2.3.1:
     dev: true
     engines:
@@ -15,10 +27,28 @@ packages:
     dev: false
     resolution:
       integrity: sha512-477o1hdVORiFlZxw8wgsXYCef3lh0zl/OV0FTftqiDxJSWw6dPQ2ipS4k20J2qBcsmsmLKSyr2iFrf9e3JGi4w==
+  /concat-map/0.0.1:
+    dev: false
+    resolution:
+      integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
   /lodash/4.17.10:
     dev: false
     resolution:
       integrity: sha512-UejweD1pDoXu+AD825lWwp4ZGtSwgnpZxb3JDViD7StjQz+Nb/6l093lx4OQ0foGWNRoc19mWy7BzL+UAK2iVg==
+  /minimatch/3.0.4:
+    dependencies:
+      brace-expansion: 1.1.11
+    dev: false
+    resolution:
+      integrity: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
+  /node-dir/0.1.17:
+    dependencies:
+      minimatch: 3.0.4
+    dev: false
+    engines:
+      node: '>= 0.10.5'
+    resolution:
+      integrity: sha1-X1Zl2TNRM1yqvvjxxVRRbPXx5OU=
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 8
 shrinkwrapVersion: 3
@@ -26,3 +56,4 @@ specifiers:
   coffeescript: ^2.3.1
   commander: ^2.17.0
   lodash: ^4.17.10
+  node-dir: ^0.1.17

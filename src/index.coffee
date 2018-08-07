@@ -1,4 +1,5 @@
 _ = require 'lodash'
+map = require 'util/map'
 
 program = require 'commander'
     .version((require 'package.json').version)
