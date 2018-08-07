@@ -4,13 +4,15 @@ map = require './utils/map'
 
 program = require 'commander'
     .version((require '../package.json').version)
-    .option '-c, --compile', 'Compile to Javascript and save as .js'
-    .option '-o, --output', 'Set the output'
+    .option '-c, --compile [path]', 'Compile to Javascript and save as .js'
+    .option '-o, --output [path]', 'Set the output'
     .parse process.argv
 
 config =
     source: program.compile
     out: program.compile || program.output
+
+console.log config
 
 if program.compile == undefined
     do program.outputHelp

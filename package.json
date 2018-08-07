@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "src/h-script.coffee",
 	"scripts": {
-		"test": "npm run build && node ./build/h-script.js -c ./test/test.js",
+		"test": "npm run build && node --inspect-brk .\\build\\h-script.js -c .\\test",
 		"build": "coffee --output build --compile src",
 		"run": "node /build/h-script.js",
 		"install": "pnpm install"

@@ -11,5 +11,5 @@ t = (content, table) ->
 module.exports =
     e2h: (content) ->
         return t content, e2h
-    h2e: (input) ->
+    h2e: (content) ->
         return t content, h2e
