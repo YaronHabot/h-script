@@ -1,6 +1,7 @@
 _ = require 'lodash'
 map = require './utils/map'
 {h2e} = require './utils/translation-matrix'
+replaceExt = require 'replace-ext'
 
 program = require 'commander'
     .version((require '../package.json').version)
