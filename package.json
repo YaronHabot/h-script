@@ -4,15 +4,14 @@
 	"description": "",
 	"main": "src/h-script.coffee",
 	"scripts": {
-		"test": "npm run build && node --inspect-brk .\\build\\h-script.js -c .\\test",
-		"build": "coffee --output build --compile src",
-		"run": "node /build/h-script.js",
-		"install": "pnpm install"
+		"test": "npm run build && node ./build/h-script.js -c ./test && node ./test/test.js",
+		"build": "coffee -b --no-header --output build --compile src",
+		"run": "node /build/h-script.js"
 	},
 	"author": "",
 	"license": "ISC",
 	"bin": {
-		"h-script": "build/h-script.js"
+		"h-script": "./build/h-script.js"
 	},
 	"dependencies": {
 		"commander": "^2.17.0",
